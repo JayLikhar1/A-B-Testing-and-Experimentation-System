@@ -2,7 +2,6 @@
 
 🔗 Live Demo: https://a-b-testing-and-experimentation-system-lq9zdfc2lj39mvnunrshhh.streamlit.app/
 
-
 ---
 
 ## 🚀 Overview  
@@ -48,9 +47,9 @@ The Smart Reminder feature increases engagement and retention by helping users m
 - **Duration:** 7 days  
 - **Randomization Unit:** Individual users  
 
-**Variants:**  
-- Control → Baseline experience  
-- Treatment → Smart Reminder enabled  
+### Variants  
+- **Control:** Baseline experience  
+- **Treatment:** Smart Reminder enabled  
 
 ---
 
@@ -62,8 +61,8 @@ The Smart Reminder feature increases engagement and retention by helping users m
 ### Secondary Metric — Retention  
 - 7-day retention rate (binary)  
 
-👉 Engagement = short-term behavior  
-👉 Retention = long-term value  
+👉 Engagement → short-term behavior  
+👉 Retention → long-term value  
 
 ---
 
@@ -71,7 +70,7 @@ The Smart Reminder feature increases engagement and retention by helping users m
 
 ### 1. Independent t-test  
 - Used for engagement (continuous data)  
-- Compares mean values of two groups  
+- Compares mean values between two groups  
 
 ### 2. Two-Proportion z-test  
 - Used for retention (binary data)  
@@ -105,10 +104,10 @@ The Smart Reminder feature increases engagement and retention by helping users m
 
 ### ✅ Decision: SHIP THE FEATURE  
 
-**Why?**  
-- Significant improvement in engagement and retention  
-- Strong statistical confidence  
-- Positive business impact  
+**Reason:**  
+- Strong statistical significance  
+- Positive impact on key metrics  
+- Meaningful business improvement  
 
 ---
 
@@ -116,8 +115,8 @@ The Smart Reminder feature increases engagement and retention by helping users m
 
 - Improves user engagement  
 - Increases retention rates  
-- Enables data-driven product decisions  
-- Reduces deployment risk  
+- Enables data-driven decision making  
+- Reduces risk before feature rollout  
 
 ---
 
@@ -125,14 +124,14 @@ The Smart Reminder feature increases engagement and retention by helping users m
 
 - Short experiment duration (7 days)  
 - External factors not controlled  
-- Results may vary across different user segments  
+- Results may vary across user segments  
 
 ---
 
 ## 🔮 Future Work  
 
 - Segment-based analysis  
-- Multi-variant testing  
+- Multi-variant A/B testing  
 - Long-term retention tracking  
 - ML-based personalization  
 
@@ -140,8 +139,11 @@ The Smart Reminder feature increases engagement and retention by helping users m
 
 ## 🛠 Tech Stack  
 
-Python | Pandas | NumPy | SciPy | Statsmodels  
-Streamlit | Plotly  
+- **Language:** Python  
+- **Data Processing:** Pandas, NumPy  
+- **Statistical Analysis:** SciPy, Statsmodels  
+- **Visualization:** Plotly  
+- **Dashboard:** Streamlit  
 
 ---
 
@@ -149,13 +151,24 @@ Streamlit | Plotly
 
 
 ab-testing-experiment/
-│── app.py # Streamlit dashboard
-│── data_simulation.py # Data generation
-│── analysis.py # Statistical testing
-│── requirements.txt
-│── README.md
+│
+├── app.py # Streamlit dashboard (main application)
+├── data_simulation.py # Simulates user data and experiment setup
+├── analysis.py # Performs statistical tests and analysis
+├── requirements.txt # Project dependencies
+├── README.md # Project documentation
 
 
+---
+
+## ⚙️ How It Works  
+
+1. Simulates user data (50,000 users)  
+2. Randomly assigns users to control and treatment groups  
+3. Measures engagement and retention metrics  
+4. Applies statistical tests (t-test & z-test)  
+5. Calculates confidence intervals  
+6. Generates business recommendation (Ship / No-Ship)  
 
 ---
 
@@ -164,8 +177,8 @@ ab-testing-experiment/
 ### Install Dependencies  
 ```bash
 pip install -r requirements.txt
+Run Application
 streamlit run app.py
 
-
----
+App will run at: http://localhost:8501
 
