@@ -1,6 +1,7 @@
 # 📊 A/B Testing & Experimentation System  
 
-🔗 Live Demo: https://your-app-link.streamlit.app  
+🔗 Live Demo: https://a-b-testing-and-experimentation-system-lq9zdfc2lj39mvnunrshhh.streamlit.app/
+
 
 ---
 
@@ -165,23 +166,6 @@ ab-testing-experiment/
 pip install -r requirements.txt
 streamlit run app.py
 
-📸 Dashboard Features
-Experiment simulation
-Control vs Treatment comparison
-Statistical analysis results
-Confidence intervals
-Ship / No-Ship decision
-🎯 Key Skills Demonstrated
-A/B Testing & Experimentation
-Statistical Analysis
-Hypothesis Testing
-Data Visualization
-Business Decision Making
-📄 License
 
-For educational and portfolio purposes
+---
 
-👤 Author
-
-Jay Likhar
-Aspiring Data Analyst | Data Science Enthusiast
